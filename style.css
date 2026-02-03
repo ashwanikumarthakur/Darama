@@ -1,0 +1,88 @@
+/* ===============================
+   GLOBAL STYLES
+=============================== */
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+}
+
+/* ===============================
+   HEADER / TITLE
+=============================== */
+
+h2 {
+  margin-top: 40px;
+  color: #333;
+  font-size: 24px;
+  text-align: center;
+}
+
+/* ===============================
+   VIDEO UPLOAD INPUT
+=============================== */
+
+input[type="file"] {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  width: 250px;
+  text-align: center;
+  background-color: #fff;
+}
+
+/* ===============================
+   UPLOAD BUTTON
+=============================== */
+
+button {
+  margin-top: 15px;
+  padding: 12px 25px;
+  background: linear-gradient(135deg, #6c5ce7, #a29bfe);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 6px 15px rgba(0,0,0,0.25);
+}
+
+/* ===============================
+   STATUS TEXT
+=============================== */
+
+#status {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #555;
+  word-break: break-word; /* long URLs break nicely */
+  text-align: center;
+}
+
+/* ===============================
+   MOBILE RESPONSIVENESS
+=============================== */
+
+@media screen and (max-width: 480px) {
+  input[type="file"] {
+    width: 90%;
+  }
+  button {
+    width: 90%;
+  }
+}
